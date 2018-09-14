@@ -11,3 +11,13 @@ The project partner for DKO is Shireen Hafeez. She founded DKC with the aim of i
 opportunities for children with special needs.
 
 
+
+Commands:
+
+    Deployment:
+        > Staging: Pushes the current master to staging
+            
+
+        > Production: Pushes the finalized and tested master to production
+            `$> git remote add dkoprod https://github.com/purdue-epics-dkc/DKO
+             $> git push dkoprod master`

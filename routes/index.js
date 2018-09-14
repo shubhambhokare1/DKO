@@ -7,9 +7,10 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   var model = {
     title: 'Azure testing',
-    message: process.env.message || "Development",
+    message: process.env.PROD_MESSAGE || "Development",
   };
   res.render(index.INDEX_ROUTE, model);
 });
 
 module.exports = router;
+l
