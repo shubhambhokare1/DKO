@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import '../style/App.css';
-import App from 'grommet/components/App'
-import Box from 'grommet/components/Box'
-import 'grommet/grommet-aruba.min.css'
-import '../components/NavBar'
+import {Grommet} from 'grommet';
 import {NavBar} from '../components/NavBar';
 import {HomeImageTile, HomeContent} from '../components/HomePage';
 
@@ -21,19 +17,12 @@ class Home extends Component {
 
   }
 
-  render() {
-    return <App centered={false}>
-      <Box direction='column' pad='none' tag='div' responsive focusable>
-        <div id={undefined} className='grommetux-box grommetux-box--direction-column 
-        grommetux-box--responsive grommetux-box--pad-none' role={undefined} 
-        tabIndex={undefined} onClick={undefined}>
-          <NavBar/>
-          <HomeImageTile/>
-          <HomeContent/>
-        </div>
-     </Box>     
-    </App>
-    ;
+  render() {    
+    return <Grommet>
+      <NavBar/>
+      <HomeImageTile/>
+      <HomeContent/>
+    </Grommet>;
   }
 }
 

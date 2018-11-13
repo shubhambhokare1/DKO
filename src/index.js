@@ -1,6 +1,5 @@
 import React from 'react';
 import {render} from 'react-dom';
-import './style/index.css';
 import { Router } from 'react-router';
 import  createBrowserHistory  from 'history/createBrowserHistory';
 import * as serviceWorker from './serviceWorker';
