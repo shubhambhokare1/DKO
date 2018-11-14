@@ -4,7 +4,7 @@ import {Box, Grommet, Image,
 import {ABOUT_DKO_HEADING, ABOUT_DKO_DESCRIPTION,
         ABOUT_PRODUCT_TITLE} from '../constants/pages';
 import {IMAGE_GROMMET_THEME, IMAGE_MARGIN, 
-        ABOUT_DKO_CONTENT_THEME
+        ABOUT_DKO_CONTENT_THEME, ABOUT_PRODUCT_THEME
     } from '../constants/themes';
 
 export const AboutImageTile = () => (
@@ -29,22 +29,18 @@ export const AboutContent = () => (
     </Grommet>
 );
 
-// export const AboutContent = () => (
-//     <Box direction='column' pad='small' margin={{top:'large'}} tag='div' responsive={true} focusable={true}>
-//         <div className='grommetux-box grommetux-box--direction-column grommetux-box--align-center 
-//         grommetux-box--responsive grommetux-box--pad-none'>
-//             <Heading align='start'>
-//                 {ABOUT_DKO}
-//             </Heading>
-
-//             <Paragraph align='center' size='xlarge' margin='small' >
-//                 <p className='grommetux-paragraph grommetux-paragraph--large '>
-//                     {ABOUT_DKO_DESCRIPTION}
-//                 </p>
-//             </Paragraph>
-//         </div>        
-//     </Box>
-// );
+export const ProductImageTile = () => (
+    <Grommet theme={IMAGE_GROMMET_THEME}>
+        <Box direction='column' height='medium' margin={IMAGE_MARGIN} background={{image: 'url(tech.png)'}}>
+            <Grommet theme={ABOUT_PRODUCT_THEME}>
+                <Heading level={1} textAlign='center' alignSelf='center'>
+                        {ABOUT_PRODUCT_TITLE}
+                </Heading>
+            </Grommet>
+            
+        </Box>
+    </Grommet>
+);
 
 // export const ProductImageTile = () => (
 //     <Box direction='column' pad='none' tag='div' responsive={true} focusable={true}>

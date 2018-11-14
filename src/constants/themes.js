@@ -67,3 +67,15 @@ export const ABOUT_DKO_CONTENT_THEME = {
         }        
       },
 };
+
+export const ABOUT_PRODUCT_THEME = {
+    heading: {
+        font: {
+            family: 'Segoe UI Light',
+        },
+        weight: 500,
+        extend: {
+            color: '#646566'
+        }
+    }
+};
