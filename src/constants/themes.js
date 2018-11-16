@@ -1,3 +1,6 @@
+import { FormAdd, FormSubtract } from 'grommet-icons';
+import React from 'react';
+
 // Navigation Bar Themes
 export const NAV_BAR_THEME = {
     global: {
@@ -79,3 +82,35 @@ export const ABOUT_PRODUCT_THEME = {
         }
     }
 };
+
+
+// Dashboard Theme
+export const DASHBOARD_THEME = {
+    global: {
+        font: {
+            family: 'Segoe UI Light',
+        },
+    },
+    heading: {
+        font: {
+            family: 'Segoe UI Light',
+        },
+        weight: 500,
+        extend: {
+            color: '#646566'
+        }
+    }
+};
+
+
+export const DASHBOARD_ACCORDIAN_THEME = {
+    accordion: {
+      icons: {
+        collapse: FormSubtract,
+        expand: FormAdd,
+        color: {
+            light: '#3c3d3f'
+        }
+      }
+    }
+  };

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Box, Grommet, Image,
-        Heading, Paragraph } from 'grommet';
+import {Box, Grommet, Image, Stack,
+        Heading, Paragraph, WorldMap } from 'grommet';
 import {HOME_HEADING_CONTENT, 
         HOME_IMAGINE_1, HOME_IMAGINE_2,
         HOME_IMAGINE_3} from '../constants/pages';
@@ -18,7 +18,7 @@ export const HomeImageTile = () => (
 
 export const HomeContent = () => (
     <Grommet theme={HOME_CONTENT_THEME}>
-        <Box direction='column' height='large' >
+        <Box direction='column' height='xlarge' >
             <Heading level={1} textAlign='center' alignSelf='center'>
                 {HOME_HEADING_CONTENT}
             </Heading>
@@ -31,6 +31,14 @@ export const HomeContent = () => (
             <Paragraph alignSelf='center' textAlign='center' size='xxlarge' margin={HOME_CONTENT_MARGIN}>
                 {HOME_IMAGINE_3}
             </Paragraph>
-        </Box>
+            
+            <Box direction='column' alignSelf='center' margin={{top: 'small', left: 'xxlarge'}}>
+                <WorldMap alignSelf='center'>
+
+                </WorldMap>
+            </Box>
+        </Box> 
+
+               
     </Grommet>
 );

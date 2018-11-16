@@ -33,11 +33,13 @@ export const ProductImageTile = () => (
     <Grommet theme={IMAGE_GROMMET_THEME}>
         <Box direction='column' height='medium' margin={IMAGE_MARGIN} background={{image: 'url(tech.png)'}}>
             <Grommet theme={ABOUT_PRODUCT_THEME}>
-                <Heading level={1} textAlign='center' alignSelf='center'>
+                <Box direction='column'>
+                    <Heading level={1} textAlign='center' alignSelf='center'>
                         {ABOUT_PRODUCT_TITLE}
-                </Heading>
-            </Grommet>
-            
+                    </Heading>
+                </Box>
+                
+            </Grommet>            
         </Box>
     </Grommet>
 );
