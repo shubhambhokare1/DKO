@@ -11,8 +11,7 @@ export const NavBar = () => (
             </Box>
             <RoutedAnchor label={MENU_OPTIONS[0]} path='/' margin='small'/>
             <RoutedAnchor label={MENU_OPTIONS[1]} path='/about' margin='small'/>
-            <RoutedAnchor label={MENU_OPTIONS[2]} margin='small'/>
-            <RoutedAnchor label={MENU_OPTIONS[3]} path='/dashboard' margin='small'/>
+            <RoutedAnchor label={MENU_OPTIONS[2]} path='/dashboard' margin='small'/>
         </Box>
     </Grommet>
     

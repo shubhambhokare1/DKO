@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Grommet} from 'grommet';
 import {NavBar} from '../components/NavBar';
-import {AboutImageTile, AboutContent, 
+import {AboutImageTile, AboutContent, VisionContent,
         ProductImageTile} from '../components/AboutPage';
 
 class About extends Component {

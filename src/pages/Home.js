@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {Grommet} from 'grommet';
 import {NavBar} from '../components/NavBar';
-import {HomeImageTile, HomeContent} from '../components/HomePage';
+import {HomeImageTile, HomeContent, HomeVisionImage,
+        HomeVisionContent} from '../components/HomePage';
 
 class Home extends Component {
   constructor(props) {
@@ -22,6 +23,8 @@ class Home extends Component {
       <NavBar/>
       <HomeImageTile/>
       <HomeContent/>
+      <HomeVisionImage/>
+      <HomeVisionContent/>
     </Grommet>;
   }
 }

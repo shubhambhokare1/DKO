@@ -57,7 +57,7 @@ export const HOME_CONTENT_MARGIN = {
 };
 
 // About Page Themes
-export const ABOUT_DKO_CONTENT_THEME = {
+export const ABOUT_THEME = {
     global: {
         font: {
             family: 'Segoe UI Light',
@@ -71,6 +71,7 @@ export const ABOUT_DKO_CONTENT_THEME = {
       },
 };
 
+
 export const ABOUT_PRODUCT_THEME = {
     heading: {
         font: {
@@ -78,7 +79,7 @@ export const ABOUT_PRODUCT_THEME = {
         },
         weight: 500,
         extend: {
-            color: '#646566'
+            color: 'light-1'
         }
     }
 };
@@ -99,7 +100,8 @@ export const DASHBOARD_THEME = {
         extend: {
             color: '#646566'
         }
-    }
+    },
+    
 };
 
 
@@ -114,3 +116,12 @@ export const DASHBOARD_ACCORDIAN_THEME = {
       }
     }
   };
+
+
+  export const DASHBOARD_VIDEO_THEME = {
+    box: {
+        size: {
+            medium: '25px'
+        }
+    }
+  }
